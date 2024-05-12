@@ -18,14 +18,14 @@ class MyDrawer extends StatelessWidget {
                 margin: const EdgeInsets.all(0),
                 decoration: BoxDecoration(color: Theme.of(context).canvasColor),
                 accountName: Text(
-                  "Learning App for kids",
+                  "Балаларға арналған оқу қолданбасы",
                   style: Theme.of(context)
                       .textTheme
                       .titleLarge
                       ?.copyWith(fontWeight: FontWeight.bold),
                 ),
                 accountEmail: Text(
-                  "Made by sapatevaibhav",
+                  "Жасаған Батырбаев Шыңғыс",
                   style: Theme.of(context).textTheme.bodyLarge,
                 ),
                 currentAccountPicture: const CircleAvatar(
@@ -36,7 +36,7 @@ class MyDrawer extends StatelessWidget {
             ),
             _buildListTile(
               icon: Icons.home,
-              title: "Home",
+              title: "Басты бет",
               onTap: () {
                 Navigator.pushReplacementNamed(context, AllRoutes.homeRoute);
               },
@@ -44,7 +44,7 @@ class MyDrawer extends StatelessWidget {
             ),
             _buildListTile(
               icon: Icons.text_fields,
-              title: "A - Z",
+              title: "Әліппе А - Я",
               onTap: () {
                 Navigator.pushNamed(context, AllRoutes.atozRoute);
               },
@@ -52,7 +52,7 @@ class MyDrawer extends StatelessWidget {
             ),
             _buildListTile(
               icon: Icons.pest_control_rodent_outlined,
-              title: "Animals",
+              title: "Жануарлар",
               onTap: () {
                 Navigator.pushNamed(context, AllRoutes.animalRoute);
               },
@@ -60,7 +60,7 @@ class MyDrawer extends StatelessWidget {
             ),
             _buildListTile(
               icon: Icons.egg,
-              title: "Birds",
+              title: "Құстар",
               onTap: () {
                 Navigator.pushNamed(context, AllRoutes.birdsRoute);
               },
@@ -68,7 +68,7 @@ class MyDrawer extends StatelessWidget {
             ),
             _buildListTile(
               icon: Icons.pentagon_outlined,
-              title: "Shapes",
+              title: "Пішіндер",
               onTap: () {
                 Navigator.pushReplacementNamed(context, AllRoutes.shapesRoute);
               },
@@ -76,7 +76,7 @@ class MyDrawer extends StatelessWidget {
             ),
             _buildListTile(
               icon: Icons.back_hand_rounded,
-              title: "Body parts",
+              title: "Дене бөліктері",
               onTap: () {
                 Navigator.pushNamed(context, AllRoutes.partsRoute);
               },
@@ -84,7 +84,7 @@ class MyDrawer extends StatelessWidget {
             ),
             _buildListTile(
               icon: Icons.sunny,
-              title: "Solar System",
+              title: "Күн жүйесі",
               onTap: () {
                 Navigator.pushNamed(context, AllRoutes.solarRoute);
               },
@@ -100,7 +100,7 @@ class MyDrawer extends StatelessWidget {
             ),
             _buildListTile(
               icon: Icons.question_mark_outlined,
-              title: "About us",
+              title: "Біз туралы",
               onTap: () {
                 Navigator.pushNamed(context, AllRoutes.aboutRoute);
               },

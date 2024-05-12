@@ -11,7 +11,7 @@ class AboutPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'About',
+          'Біз туралы',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
       ),
@@ -21,7 +21,7 @@ class AboutPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              'Learning app for kids',
+              'Балаларға арналған оқу қолданбасы',
               style: TextStyle(
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold,
@@ -29,17 +29,17 @@ class AboutPage extends StatelessWidget {
             ),
             const SizedBox(height: 16.0),
             const Text(
-              'Version: 1.1.0',
+              'Версиясы: 1.1.0',
               style: TextStyle(fontSize: 18.0),
             ),
             const SizedBox(height: 8.0),
             const Text(
-              'Developed by: sapatevaibhav',
+              'Жасаған: Батырбаев Шыңғыс',
               style: TextStyle(fontSize: 18.0),
             ),
             const SizedBox(height: 16.0),
             const Text(
-              'Description:',
+              'Сипаттама:',
               style: TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,
@@ -51,29 +51,29 @@ class AboutPage extends StatelessWidget {
               style: TextStyle(fontSize: 18.0),
             ),
             const SizedBox(height: 6.0),
-            const Text(
-              'Source code:',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            GestureDetector(
-              onTap: () {
-                _launchURL(context, "https://github.com/VaibhavCodeClub/learn");
-              },
-              child: SvgPicture.asset(
-                'assets/images/git.svg',
-                width: 32.0,
-                height: 32.0,
-                color: Theme.of(context).brightness == Brightness.dark
-                    ? Colors.white
-                    : Colors.black,
-              ),
-            ),
+            // const Text(
+            //   'Source code:',
+            //   style: TextStyle(
+            //     fontSize: 20.0,
+            //     fontWeight: FontWeight.bold,
+            //   ),
+            // ),
+            // GestureDetector(
+            //   onTap: () {
+            //     _launchURL(context, "https://github.com/VaibhavCodeClub/learn");
+            //   },
+            //   child: SvgPicture.asset(
+            //     'assets/images/git.svg',
+            //     width: 32.0,
+            //     height: 32.0,
+            //     color: Theme.of(context).brightness == Brightness.dark
+            //         ? Colors.white
+            //         : Colors.black,
+            //   ),
+            // ),
             const SizedBox(height: 16.0),
             const Text(
-              'Connect:',
+              'Кері байланыс:',
               style: TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,
@@ -83,7 +83,7 @@ class AboutPage extends StatelessWidget {
               children: [
                 GestureDetector(
                   onTap: () {
-                    _launchURL(context, "https://github.com/sapatevaibhav");
+                    _launchURL(context, "https://github.com/chingachcook");
                   },
                   child: SvgPicture.asset(
                     'assets/images/github.svg',
@@ -97,7 +97,7 @@ class AboutPage extends StatelessWidget {
                 const SizedBox(width: 16.0),
                 GestureDetector(
                   onTap: () {
-                    _launchURL(context, "mailto:sapatevaibhav@duck.com");
+                    _launchURL(context, "mailto:batirbaevchingiz@gmail.com");
                   },
                   child: SvgPicture.asset(
                     'assets/images/email.svg',
@@ -112,7 +112,7 @@ class AboutPage extends StatelessWidget {
                 GestureDetector(
                   onTap: () {
                     _launchURL(
-                        context, "https://linkedin.com/in/sapatevaibhav");
+                        context, "https://www.linkedin.com/in/chingiz-batirbaev/");
                   },
                   child: SvgPicture.asset(
                     'assets/images/linkedin.svg',
@@ -123,7 +123,7 @@ class AboutPage extends StatelessWidget {
                 const SizedBox(width: 16.0),
                 GestureDetector(
                   onTap: () {
-                    _launchURL(context, "https://instagram.com/v.d.r.sapate");
+                    _launchURL(context, "https://www.instagram.com/cbec.be/");
                   },
                   child: SvgPicture.asset(
                     'assets/images/instagram.svg',
@@ -146,7 +146,7 @@ class AboutPage extends StatelessWidget {
     try {
       await launchUrl(Uri.parse(url));
     } catch (e) {
-      throw 'Could not launch $url';
+      throw '$url іске қосылмады';
     }
   }
 }

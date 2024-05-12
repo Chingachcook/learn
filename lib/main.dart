@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
       initial: savedThemeMode ?? AdaptiveThemeMode.light,
       builder: (theme, darkTheme) => MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Home',
+        title: 'Басты бет',
         theme: theme,
         darkTheme: darkTheme,
         home: const MyHomePage(),
@@ -147,10 +147,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 const SizedBox(height: 20),
                 const Text(
-                  'ALPHABETS',
+                  'ӘЛІППЕ',
                   style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                 ),
-                const Text("Learn A to Z with pronunciation and an example"),
+                const Text("А-дан Я-ға дейін айтылуымен және мысалмен үйреніңіз"),
                 const SizedBox(
                   height: 20,
                 ),
@@ -187,10 +187,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 const SizedBox(height: 20),
                 const Text(
-                  'ANIMALS',
+                  'ЖАНУАРЛАР',
                   style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                 ),
-                const Text("Learn about animals and their voices"),
+                const Text("Жануарлар және олардың дауыстары туралы біліңіз"),
                 const SizedBox(
                   height: 20,
                 ),
@@ -227,10 +227,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 const SizedBox(height: 20),
                 const Text(
-                  'BODY PARTS',
+                  'ДЕНЕ МҮШЕЛЕРІ',
                   style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                 ),
-                const Text("Know about body parts and their pronunciation."),
+                const Text("Дене мүшелері және олардың айтылуын білу."),
                 const SizedBox(height: 20),
                 GestureDetector(
                   onTap: () {
@@ -265,10 +265,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 const SizedBox(height: 20),
                 const Text(
-                  'BIRDS',
+                  'ҚҰСТАР',
                   style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                 ),
-                const Text("Look out for Birds with their sounds."),
+                const Text("Дауыстары бар құстарға назар аударыңыз."),
 
                 const SizedBox(height: 20),
                 GestureDetector(
